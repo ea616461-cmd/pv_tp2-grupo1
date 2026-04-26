@@ -1,0 +1,7 @@
+const integrantes = "Walter Emanuel Aviles Ríos, Facundo Jorge Cholele, Rene Agustin Alberto Diaz Quispia y Hugo Gabriel Leaño";
+
+const mostrarPresentacion = () => {
+    console.log(`Somos ${integrantes} y estamos aprendiendo javascript.`);
+};
+
+mostrarPresentacion();

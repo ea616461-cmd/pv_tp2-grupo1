@@ -1,0 +1,9 @@
+const calcularRectangulo = () => {
+    const base = 10;
+    const altura = 5;
+    const area = base * altura;
+    const perimetro = 2 * (base + altura);
+    console.log(`Rectángulo ${base}x${altura}cm -> Área: ${area}cm², Perímetro: ${perimetro}cm.`);
+};
+
+calcularRectangulo();
