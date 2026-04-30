@@ -4,3 +4,4 @@ let segundos= (hora*3600)+(minutos*60);
 console.log(`hola:`, hora);
 console.log(`minutos: `, minutos);
 console.log(`en segundos: `, segundos);
+//fin del ejercicio 5

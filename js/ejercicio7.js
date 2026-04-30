@@ -8,3 +8,4 @@ for (let i=0; i < 6; i++ ){
 }
 console.log (`el nombre mas largo es: `+ nombmaslargo);
 console.log (`lista de nombres: `+ nombres);
+//fin del ejercicio 7

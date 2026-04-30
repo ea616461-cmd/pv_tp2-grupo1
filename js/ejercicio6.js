@@ -7,3 +7,4 @@ for (let i = 0; i < cantidedad; i++ ) {
 let promedio = suma/cantidedad;
 console.log (`Edades: `, edades );
 console.log (`promedio: `, promedio );
+//fin del ejercicio 6

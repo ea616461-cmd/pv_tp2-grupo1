@@ -21,3 +21,4 @@ for (let i = 0; i < cantidad; i++ ) {
 let promedio = suma/cantidad;
 console.log (`el promedio general: `, promedio);
 console.log(`la cantidad de aprobados: `, candapro );
+//fin del ejercicio 8
