@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numeros</title>
+</head>
+<body>
+    <script>
+        let cantidad = Number(prompt(`¿cuantos numeros desea ingresar?`));
+        let suma = 0;
+        let promedio = 0;
+        let numeing =[];
+      
+        
+        for(let i=0; i<cantidad; i++) {
+            let ingreso = Number(prompt(`Ingrese el Número ${i +1}:`));
+            numeing.push(ingreso);
+            suma = suma + ingreso;
+            promedio= suma/cantidad;
+
+        }
+        document.write(`<h1>Promedio${promedio}</h1>`);
+        document.write(`<h2>Numeros Ingresados ${numeing}</h2>`);
+
+    </script>
+</body>
+</html>
