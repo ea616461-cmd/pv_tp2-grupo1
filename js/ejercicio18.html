@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script>
+
+const calcularMayor = (num1, num2) => {
+
+    if (num1 > num2) {
+        document.write(`El número mayor es: ${num1}`);
+    } else if (num2 > num1) {
+        document.write(`El número mayor es: ${num2}`);
+    } else {
+        document.write("Ambos números son iguales");
+    }
+
+};
+
+let numero1 = parseInt(prompt("Ingrese el primer número"));
+let numero2 = parseInt(prompt("Ingrese el segundo número"));
+
+calcularMayor(numero1, numero2);
+
+</script>
+
+</body>
+</html>

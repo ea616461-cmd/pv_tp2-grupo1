@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script>
+
+const sumarRango = (inicio, fin) => {
+    let suma = 0;
+
+    for (let i = inicio; i <= fin; i++) {
+        suma += i;
+    }
+
+    return suma;
+};
+
+let num1 = parseInt(prompt("Ingrese numero inicial"));
+let num2 = parseInt(prompt("Ingrese numero final"));
+
+if (num1 <= num2) {
+    document.write(`La suma es: ${sumarRango(num1, num2)}`);
+} else {
+    document.write("El número inicial debe ser menor o igual al final");
+}
+
+</script>
+
+</body>
+</html>

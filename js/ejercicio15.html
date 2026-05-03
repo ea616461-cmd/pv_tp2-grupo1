@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script>
+
+const retornarMes = (numero) => {
+    const meses = [
+        "Enero", "Febrero", "Marzo", "Abril",
+        "Mayo", "Junio", "Julio", "Agosto",
+        "Septiembre", "Octubre", "Noviembre", "Diciembre"
+    ];
+
+    if (numero >= 1 && numero <= 12) {
+        return meses[numero - 1];
+    } else {
+        return "No corresponde a un mes";
+    }
+};
+
+let num = parseInt(prompt("Ingrese un número del 1 al 12"));
+
+document.write(`Mes: ${retornarMes(num)}`);
+
+</script>
+
+</body>
