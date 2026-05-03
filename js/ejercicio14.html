@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio14</title>
+</head>
+<body>
+    <h1>Multiplicar arreglos</h1>
+    <script>
+        const duplicar= () => {
+            const arreglo = [];
+            const cantidad = Number(prompt("¿Cuántos números desea ingresar?"));
+            for (let i = 0; i < cantidad; i++) {
+                const numero = Number(prompt(`Ingrese el número ${i + 1}:`));
+                arreglo.push(numero);
+            }
+            document.write(`<h3>Los números ingresados son:</h3>`);
+            document.write(`<ul>`);
+            arreglo.forEach((num, index) => {
+                document.write(`<li>Número ${index + 1}: ${num}</li>`);
+            });
+            document.write(`</ul>`);
+
+            const multiplicador = 2; 
+            const resultado = arreglo.map(num => num * multiplicador);
+            
+            document.write(`<h3>Los números multiplicados por ${multiplicador} son:</h3>`);
+            document.write(`<ul>`);
+            resultado.forEach((num, index) => {
+                document.write(`<li>Número ${index + 1}: ${num}</li>`);
+            });
+            document.write(`</ul>`);
+        };
+        duplicar();
+    </script>
+</body>
+</html>
