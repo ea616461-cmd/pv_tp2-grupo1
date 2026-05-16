@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 21 - Países y Capitales</title>
+    <style>
+        /* Estilos generales para centrar todo en la pantalla */
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            background: linear-gradient(135deg, #e0eafc, #cfdef3); 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            height: 100vh; 
+            margin: 0; 
+        }
+
+        /* Tarjeta contenedora principal */
+        .card { 
+            background: #ffffff; 
+            padding: 40px; 
+            border-radius: 16px; 
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); 
+            text-align: center;
+            width: 100%;
+            max-width: 380px;
+            box-sizing: border-box;
+        }
+
+        /* Título principal */
+        h2 { 
+            color: #2c3e50; 
+            margin-top: 0;
+            margin-bottom: 25px; 
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+        /* Etiquetas de los select */
+        label { 
+            display: block;
+            color: #5a6a85; 
+            margin: 15px 0 8px 0; 
+            text-align: left; 
+            font-size: 14px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* Estilo base para ambos select */
+        select { 
+            width: 100%;
+            padding: 12px 15px; 
+            font-size: 16px; 
+            border-radius: 8px; 
+            border: 2px solid #dcdde1; 
+            background-color: #f8f9fa;
+            color: #2f3640;
+            outline: none;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            box-sizing: border-box;
+        }
+
+        /* Efecto cuando el usuario hace clic en el select de países */
+        select:focus {
+            border-color: #3498db;
+            background-color: #fff;
+            box-shadow: 0 0 8px rgba(52, 152, 219, 0.2);
+        }
+
+        /* Estilo estricto cuando la capital está bloqueada */
+        select:disabled {
+            background-color: #f1f2f6;
+            color: #ac88ea;
+            border-color: #dcdde1;
+            cursor: not-allowed; /* Muestra el ícono de prohibido */
+            opacity: 0.85;
+            font-weight: 600; /* Hace que resalte la capital elegida automáticamente */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h2>Ubicaciones de América</h2>
+        
+        <label for="selectPais">Selecciona un País:</label>
+        <select id="selectPais">
+            <option value="">-- Seleccione un país --</option>
+            <option value="arg">Argentina</option>
+            <option value="bra">Brasil</option>
+            <option value="chi">Chile</option>
+            <option value="per">Perú</option>
+            <option value="col">Colombia</option>
+            <option value="uru">Uruguay</option>
+        </select>
+
+        <label for="selectCapital">Capital Asignada:</label>
+        <select id="selectCapital" disabled>
+            <option value="">-- Capital --</option>
+            <option value="arg">Buenos Aires</option>
+            <option value="bra">Brasilia</option>
+            <option value="chi">Santiago de Chile</option>
+            <option value="per">Lima</option>
+            <option value="col">Bogotá</option>
+            <option value="uru">Montevideo</option>
+        </select>
+    </div>
+
+    <script type="module" src="js/ejercicio21.js"></script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 22 - Efecto Espejo en Tiempo Real</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+            width: 100%;
+            max-width: 450px;
+            box-sizing: border-box;
+        }
+
+        h3 {
+            color: #2c3e50;
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-size: 20px;
+        }
+
+        textarea {
+            width: 100%;
+            height: 120px;
+            padding: 12px;
+            font-size: 16px;
+            border: 2px solid #e2e8f0;
+            border-radius: 8px;
+            background-color: #f8fafc;
+            color: #334155;
+            outline: none;
+            resize: none; 
+            transition: all 0.3s ease;
+            box-sizing: border-box;
+        }
+
+        textarea:focus {
+            border-color: #3498db;
+            background-color: #ffffff;
+            box-shadow: 0 0 8px rgba(52, 152, 219, 0.15);
+        }
+
+        h4 {
+            color: #64748b;
+            margin: 20px 0 8px 0;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .visor-salida {
+            background-color: #f1f5f9;
+            border-left: 4px solid #3498db;
+            padding: 15px;
+            border-radius: 0 8px 8px 0;
+            min-height: 50px;
+            font-size: 16px;
+            color: #1e293b;
+            word-wrap: break-word; /* Rompe líneas automáticamente para que no se desborde */
+            white-space: pre-wrap; /* Mantiene los saltos de línea que haga el usuario */
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h3>Panel de Entrada</h3>
+        <textarea id="txtEntrada" placeholder="Comenzá a escribir acá..."></textarea>
+        
+        <h4>Visualización en tiempo real:</h4>
+        <div id="visorTexto" class="visor-salida"></div>
+    </div>
+
+    <script type="module" src="js/ejercicio22.js"></script>
+</body>
+</html>
